@@ -83,7 +83,7 @@ window.addEventListener("load", () => {
     document.body.style.opacity = "1";
   });
 
-  document.querySelectorAll(".hero-content, .stats-bar .stat-card").forEach((el, i) => {
+  document.querySelectorAll(".hero-content").forEach((el, i) => {
     el.style.animationDelay = `${i * 0.1}s`;
   });
 });
