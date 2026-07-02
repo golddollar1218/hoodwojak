@@ -1,14 +1,14 @@
 /* ===== DESIGN TOKENS ===== */
 :root {
-  --bg-deep: #080c08;
-  --bg-primary: #0d120d;
-  --bg-elevated: #141a14;
-  --bg-card: #1a221a;
-  --bg-card-hover: #1f2a1f;
+  --bg-deep: #1a4a24;
+  --bg-primary: #1f5529;
+  --bg-elevated: #245f2f;
+  --bg-card: #2a6b38;
+  --bg-card-hover: #307842;
 
   --green-primary: #00c805;
   --green-forest: #2d6a3e;
-  --green-muted: #1e3d28;
+  --green-muted: #2d6a3e;
   --green-glow: rgba(0, 200, 5, 0.15);
 
   --gold-primary: #c9a227;
@@ -59,7 +59,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: var(--bg-deep);
+  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-deep) 100%);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -91,9 +91,9 @@ button {
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(45, 106, 62, 0.15), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(201, 162, 39, 0.06), transparent),
-    radial-gradient(ellipse 50% 30% at 10% 80%, rgba(0, 200, 5, 0.04), transparent);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(72, 160, 88, 0.18), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(201, 162, 39, 0.08), transparent),
+    radial-gradient(ellipse 50% 30% at 10% 80%, rgba(48, 120, 66, 0.12), transparent);
 }
 
 /* ===== NAVBAR ===== */
@@ -109,7 +109,7 @@ button {
 }
 
 .navbar.scrolled {
-  background: rgba(8, 12, 8, 0.85);
+  background: rgba(26, 74, 36, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom-color: var(--border-subtle);
@@ -239,8 +239,8 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, rgba(8, 12, 8, 0.4) 0%, rgba(8, 12, 8, 0.2) 40%, rgba(8, 12, 8, 0.95) 85%, var(--bg-deep) 100%),
-    linear-gradient(to right, rgba(8, 12, 8, 0.6) 0%, transparent 50%, rgba(8, 12, 8, 0.6) 100%);
+    linear-gradient(to bottom, rgba(26, 74, 36, 0.35) 0%, rgba(26, 74, 36, 0.15) 40%, rgba(26, 74, 36, 0.92) 85%, var(--bg-deep) 100%),
+    linear-gradient(to right, rgba(26, 74, 36, 0.55) 0%, transparent 50%, rgba(26, 74, 36, 0.55) 100%);
 }
 
 .hero-content {
@@ -810,7 +810,7 @@ button {
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: rgba(8, 12, 8, 0.95);
+    background: rgba(26, 74, 36, 0.95);
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 24px;
